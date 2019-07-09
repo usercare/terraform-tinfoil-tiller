@@ -125,7 +125,6 @@ resource "kubernetes_deployment" "tiller_deploy" {
 #  } # spec
 #}
 
-/*
 resource "kubernetes_service_account" "tiller" {
   metadata {
     name      = var.service_account
@@ -151,5 +150,3 @@ resource "kubernetes_cluster_role_binding" "tiller" {
     name      = "cluster-admin"
   }
 }
-*/
-
