@@ -125,12 +125,14 @@ resource "kubernetes_deployment" "tiller_deploy" {
 #  } # spec
 #}
 
+/*
 resource "kubernetes_service_account" "tiller" {
   metadata {
     name      = var.service_account
     namespace = var.namespace
   }
 }
+*/
 
 resource "kubernetes_cluster_role_binding" "tiller" {
   metadata {
